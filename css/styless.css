@@ -40,7 +40,7 @@ font-family: var(--font-family-title);
 
 /* Header */
 .header {
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 .section {
     padding-top: 94px;
@@ -72,13 +72,18 @@ font-family: var(--font-family-title);
     display: flex;    
 }
 
+.nav-item {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 .nav-item:not(:last-child) {
     margin-right: 50px;
+    
 }
 .nav-link {
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    
 
     color: var(--title-text-color);
     font-weight: 500;
@@ -135,14 +140,19 @@ font-family: var(--font-family-title);
 .hero {
     background-color: var(--additional-background-color);
     text-align: center;
+    padding: 200px 0;
+
 }
 .hero-title {
     margin-top: 0;
     margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
     
     color: var(--primery-white-color);
     font-weight: 900;
     font-size: 44px;
+    max-width: 696px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-align: center;
@@ -236,6 +246,8 @@ padding-top: 0;
     background: var(--primery-white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    padding-top: 0;
+    padding-bottom: var(--card-set-gap);
 }
 
 .team-item:not(:last-child) {
@@ -245,8 +257,7 @@ padding-top: 0;
 
 .team-name {
     margin-top: var(--card-set-gap);
-    margin-bottom: 10;
-
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -256,7 +267,7 @@ padding-top: 0;
 }
 .team-positoin {
     margin-top: 0;
-    margin-bottom: var(--card-set-gap);
+    margin-bottom: 0;
 
     font-weight: 400;
     font-size: 16px;
@@ -283,6 +294,9 @@ padding-top: 0;
     letter-spacing: 0.03em;
 }
 
+.adress-item:not(:last-child) {
+    margin-bottom: 9px;
+}
 .adress-map-link {
     color: var(--primery-white-color);
     font-size: 14px;
@@ -325,7 +339,7 @@ padding-top: 0;
 
 .projects-filter {
     display: flex;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
     justify-content: center;
 }
 
